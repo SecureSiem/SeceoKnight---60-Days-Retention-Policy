@@ -47,7 +47,7 @@ Each command should return: {"acknowledged":true}
 
 # Lets Get deploy Restention policy for 60 Days : -
 
-nano /root/wazuh-retention-60d.json
+      nano /root/wazuh-retention-60d.json
 
 
 Save and Exit
