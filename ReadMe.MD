@@ -45,6 +45,8 @@ Each command should return: {"acknowledged":true}
       du -sh /var/lib/wazuh-indexer
       df -h /
 
+# Lets Get deploy Restention policy for 60 Days : -
+
 nano /root/wazuh-retention-60d.json
 
 
