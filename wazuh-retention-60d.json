@@ -1,6 +1,6 @@
 {
   "policy": {
-    "description": "Auto delete Wazuh indices older than 60 days",
+    "description": "Auto delete Seceoknight indices older than 90 days",
     "default_state": "hot",
     "states": [
       {
@@ -10,7 +10,7 @@
           {
             "state_name": "delete",
             "conditions": {
-              "min_index_age": "60d"
+              "min_index_age": "90d"
             }
           }
         ]
@@ -22,6 +22,12 @@
             "delete": {}
           }
         ]
+      }
+    ],
+    "ism_template": [
+      {
+        "index_patterns": ["wazuh-alerts-4.x-*"],
+        "priority": 100
       }
     ]
   }
